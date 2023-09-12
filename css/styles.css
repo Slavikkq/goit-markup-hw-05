@@ -488,6 +488,10 @@ button:focus {
   background-color: #404bbf;
   border: none;
 }
+.close-button-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .close-button-icon:hover,
 .close-button-icon:focus {
   fill: #ffffff;
@@ -502,7 +506,7 @@ button:focus {
   margin-bottom: 16px;
 }
 .review-form-field-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .review-form-field-label {
   font-size: 12px;
@@ -559,7 +563,10 @@ button:focus {
 .review-form-checkbox-wrapper {
   margin-bottom: 24px;
 }
-.review-form-checkbox .visually-hidden {
+.review-form-checkbox:checked + .review-form-checkbox-label-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .review-form-checkbox-label {
   font-size: 12px;
@@ -587,4 +594,20 @@ button:focus {
 }
 .checkbox-link {
   color: #4d5ae5;
+}
+.review-form-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
