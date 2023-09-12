@@ -577,7 +577,7 @@ button:focus {
 .review-form-input:focus {
   border-color: #4d5ae5;
 }
-.review-form-field-icon + .review-form-input:hover {
+.review-form-field-icon + .review-form-input:focus {
   fill: #4d5ae5;
 }
 .review-form-field-icon {
@@ -589,6 +589,10 @@ button:focus {
 }
 .review-form-field-icon:focus {
   fill: #4d5ae5;
+}
+
+.review-comment-wrapper {
+  margin-bottom: 16px;
 }
 .review-form-comment {
   width: 100%;
@@ -611,7 +615,7 @@ button:focus {
 .review-form-checkbox-wrapper {
   margin-bottom: 24px;
 }
-.review-form-checkbox-label-span + .review-form-checkbox:checked {
+.review-form-checkbox-label-span:checked + .review-form-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
